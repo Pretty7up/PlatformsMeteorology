@@ -1,0 +1,31 @@
+using System;
+
+namespace NatureApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to the Nature App!");
+
+            Console.WriteLine("What is your favorite season? (Spring, Summer, Autumn, Winter)");
+            string season = Console.ReadLine();
+
+            Console.WriteLine("What is your favorite animal?");
+            string animal = Console.ReadLine();
+
+            Console.WriteLine("What is your favorite plant?");
+            string plant = Console.ReadLine();
+
+            Console.WriteLine("Here is your personalized nature story:");
+
+            Console.WriteLine($"In the beautiful season of {season}, a {animal} is playfully running around. " +
+                $"It stops to rest under the shade of a {plant}, enjoying the tranquil beauty of nature. " +
+                "It's moments like these that remind us of the peaceful harmony that nature offers. " +
+                "Take a moment to appreciate the wonderful world around us. Stay nature-loving!");
+
+            Console.WriteLine("Thank you for using the Nature App. Press any key to exit.");
+            Console.ReadKey();
+        }
+    }
+}
